@@ -23,7 +23,7 @@ Understanding language is fundamental to human interaction. Our brains have evol
 
 **Live Sessions:**
 * (Section 1) Tuesday 4 - 5:30p Pacific (Daniel Cer)
-* (Section 2) Wednesday 4:30 - 5;30p Pacific (Joachim Rahmfeld)
+* (Section 2) Wednesday 4 - 5:30p Pacific (Joachim Rahmfeld)
 * (Section 3) Wednesday 6:30 - 8p Pacific (Mike Tamir, Paul Spiegelhalter)
 * (Section 4) Thursday 4 - 5:30p Pacific (Mark Butler)
 * (Section 5) Saturday 8 - 9:30a Pacific (Sid J Reddy)
@@ -166,9 +166,9 @@ will be released around the last live session of the week and due approximately 
 </tr>
 
 <tr> <!-- draft project proposal -->
-  <td><strong><a href="../project/#project-proposal" target="_blank">Project&nbsp;Proposal Draft</a></strong>
+  <td><strong><a href="../project/#draft-project-proposal" target="_blank">Project&nbsp;Proposal Draft</a></strong>
   <td>
-  <strong><a href="../project" target="_blank">Final Project Guidelines</a></strong>
+  <strong><a href="../project" target="_blank">Draft Project Guidelines</a></strong>
   </td>
   <td></td>
   <td>Sep&nbsp;12</td>

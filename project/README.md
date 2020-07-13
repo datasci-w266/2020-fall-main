@@ -87,11 +87,12 @@ Additionally, we've put some of the top projects from the last semester in [a sh
 Also see below for NLP conferences - [ACL](https://www.aclweb.org/anthology/events/acl-2019/) and [EMNLP](https://www.aclweb.org/anthology/events/emnlp-2019/) are the top two, and you can find plenty of interesting ideas from the recent proceedings!
 
 ## Draft Project Proposal
-The project is a major part of this class and we want to make sure you get off on a good footing.  We will provide a form for you to fill out where you will have to answer four basic questions about what you are considering:
+The project is a major part of this class and we want to make sure you get off on a good footing.  We will provide a form for you to fill out where you will have to answer five basic questions about what you are considering:
 - What type of NLP problem are you wanting to address in your project?
 - What kind of neural architecture are you proposing to use?
-- Which data set is traditionally used to addresss the problem?
-- Reference to one paper published in 2019 or 2020 that address the problem
+- Which data set is traditionally used to address the problem?
+- Which data set are you considering using for your project?
+- Reference to one paper published in 2019 or 2020 that addresses the problem
 
 ## Project Proposal
 
