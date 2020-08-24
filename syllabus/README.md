@@ -124,7 +124,7 @@ The course will be taught in Python, and we'll be making heavy use of NumPy, Ten
 * **Python / NumPy:** Stanford's CS231n has [an excellent tutorial](http://cs231n.github.io/python-numpy-tutorial/).
 * **TensorFlow:** We'll go over the basics of TensorFlow and Keras in [Assignment 2](../../../tree/master/assignment/a2/).  
   [Effective TensorFlow](https://github.com/vahidk/EffectiveTensorflow) is a great reference, ranging from the absolute basics through advanced topics like multi-GPU training, `tf.learn`, and debugging.  
-  You can also check out the [tutorials](https://www.tensorflow.org/get_started/) on the TensorFlow website, but these can be somewhat confusing if you're not familiar with the underlying models.
+  You can also check out the [tutorials](https://www.tensorflow.org/get_started/) on the TensorFlow website, but these can be somewhat confusing if you're not familiar with the underlying models. Also, look at the [Keras Guide](https://www.tensorflow.org/guide/keras/sequential_model) as we will be using Keras in this class. 
 
 
 ### Misc. Deep Learning and NLP References
@@ -165,14 +165,15 @@ will be released around the last live session of the week and due approximately 
   <td>Aug&nbsp;30</td>
 </tr>
 
-<tr> <!-- draft project proposal -->
+<!-- draft project proposal -->
+<!-- <tr> 
   <td><strong><a href="../project/#draft-project-proposal" target="_blank">Project&nbsp;Proposal Draft</a></strong>
   <td>
   <strong><a href="../project" target="_blank">Draft Project Guidelines</a></strong>
   </td>
   <td></td>
   <td>Sep&nbsp;12</td>
-</tr>
+</tr> -->
 
 <tr> <!-- project proposal -->
   <td><strong><a href="../project/#project-proposal" target="_blank">Project&nbsp;Proposal</a></strong>
@@ -180,7 +181,7 @@ will be released around the last live session of the week and due approximately 
   <strong><a href="../project" target="_blank">Final Project Guidelines</a></strong>
   </td>
   <td></td>
-  <td>Sep&nbsp;27</td>
+  <td>Sep&nbsp;26</td>
 </tr>
 
 <tr><!--- Project Reports -->
@@ -209,15 +210,12 @@ will be released around the last live session of the week and due approximately 
 <th>Materials</th>
 </tr>
 <tr><!--- Introductions -->
-  <td><strong>Week&nbsp;1-2</strong><br>(Aug&nbsp;24)</td>
+  <td><strong>Week&nbsp;1</strong><br>(Aug&nbsp;24)</td>
   <td>Introduction
-  <br>5.2 Softmax Classification
-  <br>5.4 Neural network recap
-  <br>5.5 Neural network training loss
   </td>
   <td><ul>
     <li>Overview of NLP applications
-	<li>NLP problem structures and neural architectures
+	<li>NLP tasks, model structures and neural architectures
     <li>Ambiguity and grounding in language
     <li>Information theory review
     <li>ML models: Logistic regression and feed forward networks
@@ -227,11 +225,31 @@ will be released around the last live session of the week and due approximately 
   <li>Skim: <a href="http://www.nltk.org/book/ch02.html" target="_blank">NLTK book chapter 2 (data resources)</a>
   <li>Read: <a href="https://www.technologyreview.com/s/602094/ais-language-problem/" target="_blank">AI’s Language Problem (Technology Review)</a>
   <li>Read: <a href="http://nautil.us/issue/54/the-unspoken/the-rise-and-fall-of-the-english-sentence" target="_blank">The Rise and Fall of the English Sentence</a>
-  <li>Read: <a href="https://www.cs.toronto.edu/~hinton/absps/pdp8.pdf">Original backprop paper</a>
   <li><em>Optional:</em> <a href="http://www.newyorker.com/magazine/2007/04/16/the-interpreter-2" target="_blank">The Interpreter (New Yorker)</a>
   <li><em>Optional:</em> <a href="https://www.uio.no/studier/emner/hf/ikos/EXFAC03-AAS/h05/larestoff/linguistics/Chapter%204.(H05).pdf" target="_blank">Introduction to Linguistic Typology</a>
+      <li><em>Optional / fun:</em> <a href="http://playground.tensorflow.org/" target="_blank">Tensorflow Playground</a>
   </ul>
-  <!-- <p>                                                                                                                -->
+  <!-- <p>                                        -->
+  <!-- <a href="../materials/week1/TensorFlow%20Tutorial.ipynb" target="_blank">[TensorFlow&nbsp;Intro&nbsp;notebook]</a> -->
+  </td>
+</tr>
+<tr><!--- Week 2 -->
+  <td><strong>Week&nbsp;2</strong><br>(Aug&nbsp;31)</td>
+  <td>
+  <br>5.2 Softmax Classification
+  <br>5.4 Neural network recap
+  <br>5.5 Neural network training loss
+  </td>
+  <td><ul>
+    <li>ML models: Logistic regression and feed forward networks
+	<li>Learning and back propagation
+    <li>Initialization
+  </ul></td>
+  <td><ul>
+  <li><em>Skim:</em> <a href="https://www.cs.toronto.edu/~hinton/absps/pdp8.pdf">Original backprop paper</a>
+      <li><em>Optional / fun:</em> <a href="http://playground.tensorflow.org/" target="_blank">Tensorflow Playground</a>
+  </ul>
+  <!-- <p>                                        -->
   <!-- <a href="../materials/week1/TensorFlow%20Tutorial.ipynb" target="_blank">[TensorFlow&nbsp;Intro&nbsp;notebook]</a> -->
   </td>
 </tr>
@@ -242,16 +260,53 @@ will be released around the last live session of the week and due approximately 
   <td><ul>
   <li>Sentiment lexicons
   <li>Aggregated sentiment applications
-  <li>Bag-of-word models
-  <li>Introduction to Word embeddings
+  <li>Bag-of-words models
+  <li>Introduction to word embeddings
   </ul></td>
   <td><ul>
   <li>Skim: <a href="http://www.cs.cornell.edu/home/llee/omsa/omsa.pdf" target="_blank">Opinion Mining and Sentiment Analysis</a> (Pang and Lee 2008) - focus on Chapters 1-4
   <li><em>Optional:</em> <a href="https://arxiv.org/pdf/1103.0398v1.pdf" target="_blank">Natural Language Processing (almost) from Scratch</a> (Collobert et al., 2011)
-    <li><em>Optional / fun:</em> <a href="http://playground.tensorflow.org/" target="_blank">Tensorflow Playground</a>
 </tr>
-<tr><!--- Classification and Convolutional Networks-->
+
+<tr><!--- POS Tagging and Parsing -->
   <td><strong>Week&nbsp;4</strong><br>(Sep&nbsp;14)</td>
+  <td><a href="https://www.youtube.com/playlist?list=PLh1VT8Lm3apRPGB1uKZsMyMt1DmUf_ItE">Part of Speech Supplementary Videos</a>
+  <br>Dependency Parsing (Parsing I)
+  <br>Constituency Parsing (Parsing II)</td>
+  <td><ul>
+  <li>Tag sets
+  <li>Most frequent tag baseline
+  <li>HMM/CRF models
+  <li>Dependency trees
+  <li>Transition-based parsing: Arc&#8209;standard, Arc&#8209;eager
+  <li>Context-free grammars (CFGs)
+  <li>CKY algorithm
+  <li>Probabilistic CFGs
+  </ul>
+  <b>Note:</b> Section 7.6 this week in the async is optional.
+  </td>
+  <td><ul>
+  <li>Read: <a href="http://www.nltk.org/book/ch05.html" target="_blank">NLTK book chapter 5: Categorizing and Tagging Words</a>
+  <li>Read: <a href="https://arxiv.org/pdf/1104.2086.pdf" target="_blank">A Universal Part-of-Speech Tagset</a>
+  <li><em>Optional:</em> <a href="http://nlp.stanford.edu/pubs/CICLing2011-manning-tagging.pdf" target="_blank">Part-of-Speech Tagging from 97% to 100%: Is It Time for Some Linguistics?</a>
+    <li>Read: <a href="https://research.googleblog.com/2016/05/announcing-syntaxnet-worlds-most.html" target="_blank">SyntaxNet (Parsey McParseface)</a>
+  <li>Skim: <a href="https://web.stanford.edu/~jurafsky/slp3/15.pdf" target="_blank">Dependency Parsing (J&M Chapter 15)</a>
+    <li>Skim: <a href="https://web.stanford.edu/~jurafsky/slp3/13.pdf" target="_blank">Constituency Parsing (J&M Chapter 13)</a>
+  <li><em>Optional:</em> <a href="http://cs.stanford.edu/people/danqi/papers/emnlp2014.pdf" target="_blank">A Fast and Accurate Dependency Parser using Neural Networks</a> (Chen & Manning 2014)
+    <li>Skim: <a href="http://www.nltk.org/book/ch08.html" target="_blank">NLTK book chapter 8 (analyzing sentence structure)</a>
+  <li>Skim: <a href="http://ilpubs.stanford.edu:8091/~klein/unlexicalized-parsing.pdf" target="_blank">Accurate Unlexicalized Parsing</a> (Klein & Manning 2003)
+  <li>Play: <a href="http://nlp.stanford.edu:8080/parser/" target="_blank">Stanford parser</a> (online demo)
+  <li><em>Optional / reference:</em> <a href="http://www.surdeanu.info/mihai/teaching/ista555-fall13/readings/PennTreebankConstituents.html" target="_blank">Penn Treebank Constituent Tags</a>
+  </ul>
+  <br>
+  <a href="https://hmm-dot-nlp-visualizations.appspot.com/hmm?sentence=James+ate+the+food&vizMode=viterbi&numFormat=log" target="_blank">[<em>Optional:</em> Interactive HMM Demo]</a>
+  <p>
+  <a href="https://cky-dot-nlp-visualizations.appspot.com/cky?sentence=James+ate+the+food" target="_blank">[<em>Optional:</em> Interactive CKY Demo]</a>
+  </td>
+</tr>
+
+<tr><!--- Classification and Convolutional Networks-->
+  <td><strong>Week&nbsp;5</strong><br>(Sep&nbsp;21)</td>
   <td>Classification and Sentiment (2.7 onwards)
   <p><p>
   <em>Note: you should review Async 5.3, 5.4, and 5.5.</em>
@@ -264,8 +319,8 @@ will be released around the last live session of the week and due approximately 
   <li>Read: <a href="https://arxiv.org/abs/1408.5882" target="_blank">Convolutional Neural Networks for Sentence Classification</a> (Yoon Kim, 2014)
 </ul></td>
 </tr>
-<tr><!--- n-grams -->
-  <td><strong>Week&nbsp;5</strong><br>(Sep&nbsp;21)</td>
+<tr><!--- Language models and n-grams -->
+  <td><strong>Week&nbsp;6</strong><br>(Sep&nbsp;28)</td>
   <td>Language Modeling I,
   <br>4.1-4.4, 4.12 - 4.17,
   <br>5.8, 5.11</td>
@@ -298,23 +353,7 @@ will be released around the last live session of the week and due approximately 
   <br><a href="../materials/nplm/nplm.ipynb" target="_blank">[NPLM Notebook]</a>
   </td>
 </tr>
-<tr><!--- Neural language models -->
-  <td><strong>Week&nbsp;6</strong><br>(Sep&nbsp;28)</td>
-  <td>Language Modeling II</td>
-  <td><ul>
-  <li>Recurrent Neural Nets
-  <li>State of the art: Advanced Embeddings and Transfer Learning
-  </ul></td>
-  <td><ul>
-  <li><em>Read or skim:</em> <a href="http://neuralnetworksanddeeplearning.com/chap2.html" target="_blank">How the backpropagation algorithm works</a>
-  <li>Read: <a href="http://colah.github.io/posts/2015-08-Understanding-LSTMs/" target="_blank">Understanding LSTM Networks</a> (Chris Olah's blog)
-    <li><em>Optional:</em> <a href="https://arxiv.org/pdf/1802.05365.pdf" target="_blank">”Deep contextualized word representations”</a>, (Peters et al, 2018)
-  <li><em>Optional (skim):</em> <a href="https://www.tensorflow.org/versions/master/tutorials/recurrent/index.html#recurrent-neural-networks" target="_blank">Tensorflow LSTM Language Model Tutorial</a>
-  </ul>
-  <p>
-  <p>
-  </td>
-</tr>
+
 <tr><!--- Extra Material -->
   <td><strong>Interlude (Extra Material)</strong></td>
   <td>Units of Meaning: Words, Morphology, Sentences</td>
@@ -330,8 +369,27 @@ will be released around the last live session of the week and due approximately 
   <p>
   </ul></td>
 </tr>
-<tr><!--- Week 7 and 8 -->
+
+<tr><!--- Neural language models and RNNs -->
   <td><strong>Week&nbsp;7</strong><br>(Oct&nbsp;5)</td>
+  <td>Language Modeling II</td>
+  <td><ul>
+  <li>Recurrent Neural Nets
+  <li>State of the art: Advanced Embeddings and Transfer Learning
+  </ul></td>
+  <td><ul>
+  <li><em>Read or skim:</em> <a href="http://neuralnetworksanddeeplearning.com/chap2.html" target="_blank">How the backpropagation algorithm works</a>
+  <li>Read: <a href="http://colah.github.io/posts/2015-08-Understanding-LSTMs/" target="_blank">Understanding LSTM Networks</a> (Chris Olah's blog)
+    <li><em>Optional:</em> <a href="https://arxiv.org/pdf/1802.05365.pdf" target="_blank">”Deep contextualized word representations”</a>, (Peters et al, 2018)
+  <li><em>Optional (skim):</em> <a href="https://www.tensorflow.org/versions/master/tutorials/recurrent/index.html#recurrent-neural-networks" target="_blank">Tensorflow LSTM Language Model Tutorial</a>
+  </ul>
+  <p>
+  <p>
+  </td>
+</tr>
+
+<tr><!--- Week 8  -->
+  <td><strong>Week&nbsp;8</strong><br>(Oct&nbsp;12)</td>
   <td>Machine Translation I
   <br>Machine Translation II</td>
   <td><ul>
@@ -346,8 +404,10 @@ will be released around the last live session of the week and due approximately 
   <li><em>Optional:</em> <a href="https://arxiv.org/abs/1609.08144" target="_blank">Google’s Neural Machine Translation System</a>
   <li><em>Optional:</em> <a href="http://distill.pub/2016/augmented-rnns/#attentional-interfaces" target="_blank">Attention and Augmented Recurrent Neural Networks</a> (section on “Attentional Interfaces” has an awesome visualization of an MT example, showing alignments)
   </ul></td>
-    <tr><!--- Transformers  week 8-->
-  <td><strong>Week&nbsp;8</strong><br>(Oct&nbsp;12)</td>
+  </tr>
+  
+  <tr><!--- Transformers  week 9  -->
+  <td><strong>Week&nbsp;9</strong><br>(Oct&nbsp;19)</td>
   <td>No Async</td>
   <td><ul>
   <li>Self-Attention
@@ -362,8 +422,9 @@ will be released around the last live session of the week and due approximately 
   <p>
   </td>
 </tr>
-  <tr><!--- Practical Machine Learning  week 9-->
-  <td><strong>Week&nbsp;9</strong><br>(Oct&nbsp;19)</td>
+
+  <tr><!--- Practical Machine Learning  week 10 -->
+  <td><strong>Week&nbsp;10</strong><br>(Oct&nbsp;26)</td>
   <td>No Async</td>
   <td><ul>
   <li>Practical Deep Learning Tips
@@ -376,8 +437,9 @@ will be released around the last live session of the week and due approximately 
   <p>
   </td>
 </tr>
-<tr><!--- Week 10 -->
-  <td><strong>Week&nbsp;10</strong><br>(Oct&nbsp;26)</td>
+
+<tr><!--- Week 11 Summarization-->
+  <td><strong>Week&nbsp;11</strong><br>(Nov&nbsp;2)</td>
   <td>Summarization</td>
   <td><ul>
   <li>Single- vs. multi-document summarization
@@ -393,8 +455,9 @@ will be released around the last live session of the week and due approximately 
   <p>
   </td>
 </tr>
-<tr><!--- Entities -->
-  <td><strong>Week&nbsp;11</strong><br>(Nov&nbsp;2)</td>
+
+<tr><!--- Week 12 Entities -->
+  <td><strong>Week&nbsp;12</strong><br>(Nov&nbsp;16)</td>
   <td>Entities</td>
   <td><ul>
   <li>From syntax to semantics
@@ -410,8 +473,9 @@ will be released around the last live session of the week and due approximately 
   <p>
   </td>
 </tr>
-<tr><!--- Information Retrieval -->
-  <td><strong>Week&nbsp;12</strong><br>(Nov&nbsp;16)</td>
+
+<tr><!--- Week 13 Information Retrieval -->
+  <td><strong>Week&nbsp;13</strong><br>(Nov&nbsp;30)</td>
   <td>Information Retrieval</td>
   <td><ul>
   <li>Building a Search Index
@@ -430,45 +494,7 @@ will be released around the last live session of the week and due approximately 
   </td>
 </tr>
 
-<tr><!--- POS Tagging and Parsing -->
-  <td><strong>Week&nbsp;13</strong><br>(Nov&nbsp;30)</td>
-  <td><a href="https://www.youtube.com/playlist?list=PLh1VT8Lm3apRPGB1uKZsMyMt1DmUf_ItE">Part of Speech Supplementary Videos</a>
-  <br>Dependency Parsing
-  <br>Constituency Parsing</td>
-  <td><ul>
-  <li>Tag sets
-  <li>Most frequent tag baseline
-  <li>HMM/CRF models
-  <li>Dependency trees
-  <li>Transition-based parsing: Arc&#8209;standard, Arc&#8209;eager
-  <li>Graph based parsing: Eisner Algorithm, Chu&#8209;Liu&#8209;Edmonds
-  <li>Context-free grammars (CFGs)
-  <li>CKY algorithm
-  <li>Probabilistic CFGs
-  <li>Lexicalized grammars, split-merge, and EM
-  </ul>
-  <b>Note:</b> Section 7.6 this week in the async is optional.
-  </td>
-  <td><ul>
-  <li>Read: <a href="http://www.nltk.org/book/ch05.html" target="_blank">NLTK book chapter 5: Categorizing and Tagging Words</a>
-  </ul>
-  <p>
-  <br><ul>
-  <a href="https://hmm-dot-nlp-visualizations.appspot.com/hmm?sentence=James+ate+the+food&vizMode=viterbi&numFormat=log" target="_blank">[Interactive HMM Demo]</a>
-  <li>Read: <a href="https://arxiv.org/pdf/1104.2086.pdf" target="_blank">A Universal Part-of-Speech Tagset</a>
-  <li>Read: <a href="http://nlp.stanford.edu/pubs/CICLing2011-manning-tagging.pdf" target="_blank">Part-of-Speech Tagging from 97% to 100%: Is It Time for Some Linguistics?</a>
-    <li>Read: <a href="https://research.googleblog.com/2016/05/announcing-syntaxnet-worlds-most.html" target="_blank">SyntaxNet (Parsey McParseface)</a>
-  <li>Read: <a href="https://web.stanford.edu/~jurafsky/slp3/14.pdf" target="_blank">Dependency Parsing (J&M Chapter 14)</a>
-  <li><em>Optional:</em> <a href="http://cs.stanford.edu/people/danqi/papers/emnlp2014.pdf" target="_blank">A Fast and Accurate Dependency Parser using Neural Networks</a> (Chen & Manning 2014)
-    <li>Read: <a href="http://www.nltk.org/book/ch08.html" target="_blank">NLTK book chapter 8 (analyzing sentence structure)</a>
-  <li>Skim: <a href="http://ilpubs.stanford.edu:8091/~klein/unlexicalized-parsing.pdf" target="_blank">Accurate Unlexicalized Parsing</a> (Klein & Manning 2003)
-  <li>Play: <a href="http://nlp.stanford.edu:8080/parser/" target="_blank">Stanford parser</a> (online demo)
-  <li><em>Optional / reference:</em> <a href="http://www.surdeanu.info/mihai/teaching/ista555-fall13/readings/PennTreebankConstituents.html" target="_blank">Penn Treebank Constituent Tags</a>
-  </ul>
-  <p>
-  <a href="https://cky-dot-nlp-visualizations.appspot.com/cky?sentence=James+ate+the+food" target="_blank">[Interactive CKY Demo]</a>
-  </td>
-</tr>
+
 </table>
 
 Thanks for a great semester!
