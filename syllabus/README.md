@@ -173,6 +173,15 @@ will be released around the last live session of the week and due approximately 
   <td></td>
   <td>Sep&nbsp;6</td>
 </tr>
+<tr>  <!-- a2 -->
+  <td><strong><a href="../assignment/a2" target="_blank">Assignment&nbsp;2</a></strong>
+  <td><strong>Assignment 2</strong>
+  <ul>
+    <li>Neural Networks
+  </ul></td>
+  <td></td>
+  <td>Sep&nbsp;13</td>
+</tr>
 <!-- draft project proposal -->
 <!-- <tr> 
   <td><strong><a href="../project/#draft-project-proposal" target="_blank">Project&nbsp;Proposal Draft</a></strong>
