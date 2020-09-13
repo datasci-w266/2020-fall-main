@@ -182,6 +182,16 @@ will be released around the last live session of the week and due approximately 
   <td></td>
   <td>Sep&nbsp;13</td>
 </tr>
+<tr> <!-- a3 -->
+  <td><strong><a href="../assignment/a3" target="_blank">Assignment&nbsp;3</a></strong>
+  <td><strong>Assignment 3</strong>
+  <ul>
+    <li>Embeddings
+    <li>ML Fairness
+  </ul></td>
+  <td></td>
+  <td>Sep&nbsp;20</td>
+</tr>
 <!-- draft project proposal -->
 <!-- <tr> 
   <td><strong><a href="../project/#draft-project-proposal" target="_blank">Project&nbsp;Proposal Draft</a></strong>
