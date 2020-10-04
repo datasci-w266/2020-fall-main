@@ -220,6 +220,15 @@ will be released around the last live session of the week and due approximately 
   <td></td>
   <td>October&nbsp;4</td>
 </tr>
+<tr> <!-- a5 -->
+  <td><strong><a href="../assignment/a5" target="_blank">Assignment&nbsp;5</a></strong>
+  <td><strong>Assignment 5</strong>
+  <ul>
+    <li>Language Models
+  </ul></td>
+  <td></td>
+  <td>Oct&nbsp;11</td>
+</tr>
 <tr><!--- Project Reports -->
   <td><strong><a href="../project/#final-submission" target="_blank">Project&nbsp;Reports</a></strong>
   </td>
