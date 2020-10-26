@@ -469,7 +469,7 @@ will be released around the last live session of the week and due approximately 
   <li>Transfer Learning
   </ul></td>
   <td><ul>
-  <li><em>Read (skim):</em> <a href="https://arxiv.org/pdf/1802.05365.pdf" target="_blank">Attention is All You Need</a> (Vaswani et. al., 2017)
+  <li><em>Read (skim):</em> <a href="https://arxiv.org/pdf/1706.03762.pdf" target="_blank">Attention is All You Need</a> (Vaswani et. al., 2017)
  <li><em>Read (skim):</em> <a href="https://arxiv.org/pdf/1810.04805v1.pdf" target="_blank">BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding”</a>, (Devlin et al, 2018)
  <li><em>Read (skim):</em> <a href="https://jalammar.github.io/illustrated-bert/" target="_blank">The Illustrated BERT, ELMo, and co. (How NLP Cracked Transfer Learning)”</a>, (Alammar, 2018)
   </ul>
